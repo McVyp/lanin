@@ -6,7 +6,7 @@ module.exports = {
       colors:{
         bckg: "#171819",
         muted: "#C9CBCF",
-        accent: "#66CCC!"
+        accent: "#66CCC1"
       },
       container:{
         center: true,
