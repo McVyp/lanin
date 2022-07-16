@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-bckg text-white selection:bg-screen selection:text-bckg ">
+  <body class="bg-bckg text-base text-white selection:bg-screen selection:text-bckg ">
     <div id="parallax">
       <nav class="grid place-items-center absolute w-full top-0 z-50 drop-shadow-text-sm" aria-label="Primary Navigation">
         <a href="/" aria-label="Go Home" class="p-1 m-4 focus:outline-none focus-visible:ring-4 ring-accent rounded-full transition-shadow">
@@ -46,20 +46,34 @@
               </div>
               <p class="text-muted drop-shadow-text-sm" >In the early 1300 when I was born in a mason family, I worked hard until all my debts were cleared. I was married to a women who's beauty was out of this world and we had childrens who were joyful unlike me.</p>
           </section>
-          <section aria-labelledby="headline" class="container grid gap-4 text-center sm:text-left relative">
-            <div>
-              <small class="tracking-widest text-accent uppercase drop-shadow-text-sm">OFF THE GRIP</small>
-              <h2 id="headline" class="text-3xl font-bold tracking-wide drop-shadow-text-md">Take a leap into the unknown </h2>
-            </div>
-            <div class="flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center space-x-4 space-y-4">
-              <p class="text-muted drop-shadow-text-sm max-w-2xl" >let the world know what you can do without telling them what you can. A leap to the unknown to scatter all your stress away</p>
-              <div class="flex space-x-4">
-                <button data-slideBtn id="prev" aria-label="show" previmg=""><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" class= "pointer-events-none" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></circle><polyline points="121.9 161.9 88 128 121.9 94.1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline><line x1="168" y1="128" x2="88" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line></svg></button>
-
-                <button data-slideBtn id="prev" aria-label="show" previmg=""><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></circle><polyline points="134.1 161.9 168 128 134.1 94.1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline><line x1="88" y1="128" x2="168" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line></svg></button>
+          <section aria-labelledby="slider" class="container grid gap-4 text-center sm:text-left ">
+            <div class="relative">
+              <div class="hidden sm:block absolute w-8 bg-accent/10 -left-4 h-full">
               </div>
-          </div>
-        </section>
+            
+              <div>
+                <small class="tracking-widest text-accent uppercase drop-shadow-text-sm">OFF THE GRIP</small>
+                <h2 id="headline" class="text-3xl font-bold tracking-wide drop-shadow-text-md">Take a leap into the unknown </h2>
+                </div>
+                <div class="flex flex-wrap sm:flex-nowrap justify-center sm:justify-between items-center space-x-4 space-y-4">
+                <p class="text-muted drop-shadow-text-sm max-w-2xl" >let the world know what you can do without telling them what you can. A leap to the unknown to scatter all your stress away</p>
+                <div class="flex space-x-4">
+                  <button data-slideBtn id="prev" aria-label="show previmg" class="grid place-items-center bg-accent hover:bg-accent/90 rounded-full p-2 text-bckg focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bckg ring-accent disabled:bg-accent/20 disabled:text-accent" disabled>
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" width="36" height="36" class= "pointer-events-none" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></circle><polyline points="121.9 161.9 88 128 121.9 94.1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline><line x1="168" y1="128" x2="88" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                    </svg>
+                  </button>
+
+                  <button data-slideBtn id="next" aria-label="show nextimg" class="grid place-items-center bg-accent hover:bg-accent/90 rounded-full p-2 text-bckg  focus:outline-none focus-visible:ring-4 ring-offset-2 ring-offset-bckg ring-accent disabled:bg-accent/20 disabled:text-accent">
+                    <svg 
+                      xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="96" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></circle><polyline points="134.1 161.9 168 128 134.1 94.1" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline><line x1="88" y1="128" x2="168" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+          
       </main>
     </div>
     <script type="module" src="/main.js"></script>
