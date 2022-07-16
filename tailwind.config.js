@@ -8,6 +8,9 @@ module.exports = {
         muted: "#C9CBCF",
         accent: "#66CCC1"
       },
+      scale:{
+        xs:"425px"
+      },
       dropShadow:{
         "text-sm": "1px 1px 0px rgba(0, 0, 0, 0.90)",
         "text-md": "1px 2px 0px rgba(0, 0, 0, 0.90)",
