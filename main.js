@@ -52,3 +52,25 @@ const slideObserver = new IntersectionObserver((slide)=> {
 
 slideObserver.observe(slides[slides.length -1]);
 
+// form handle
+
+const contactForm = document.querySelector("#contact")
+const contactBtn = document.querySelector("#contact-btn");
+const contactInput = document.querySelector("#email");
+
+function postEmailToDatabase(email){
+    console.info(`Your email is ${email}`);
+    return new Promise(resolve => setTimeout(resolve, 2000));
+}
+
+async function handleFormSubmit(e){
+    e.preventDefault();
+    addDisabledAttribute([contactForm, contactBtn]);
+    const userEmail = contactInput.value;
+    contactInput.style.display = 'none';
+    await postEmailToDatabase(userEmail);
+    
+}
+// event listener
+
+contactForm.addEventListener('submit', handleFormSubmit);
