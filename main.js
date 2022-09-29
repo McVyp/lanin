@@ -48,7 +48,7 @@ const slideObserver = new IntersectionObserver((slide)=> {
     if(slide[0].isIntersecting){
         addDisabledAttribute([slideBtn[1]]);
     }
-}, {threshold: .25});
+}, {threshold: .85});
 
 slideObserver.observe(slides[slides.length -1]);
 
